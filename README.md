@@ -13,8 +13,6 @@ To gain experience and have something to show employers.
 Our code will be deployed, but if you want to you can run it locally.
 
 ```
-Fork this repo 
-
 git clone https://github.com/namakakprep/namakprep.git
 
 Navigate into this directory
