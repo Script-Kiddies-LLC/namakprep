@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/namakakprep/namakprep/issues"
   },
-  "homepage": "https://github.com/namakakprep/namakprep#readme"
+  "homepage": "https://github.com/namakakprep/namakprep#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
