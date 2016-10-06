@@ -30,9 +30,9 @@ Will be using testing in the near future.
 
 ## Contributors
 
-![Viltaria](https://avatars1.githubusercontent.com/u/15609358?v=3&s=466) [Viltaria](https://github.com/Viltaria)
+![Viltaria](https://i.imgur.com/F8a71VL.png) [Viltaria](https://github.com/Viltaria)
 
-![Zicero](https://avatars3.githubusercontent.com/u/22206529?v=3&s=466) [Zicero](https://github.com/Zicero)
+![Zicero](https://i.imgur.com/p7GU2Vr.jpg) [Zicero](https://github.com/Zicero)
 
-![Kirsten0604](https://avatars0.githubusercontent.com/u/17192451?v=3&s=466) [Kirsten0604](https://github.com/Kirsten0604)
+![Kirsten0604](https://i.imgur.com/tqLr2WR.png) [Kirsten0604](https://github.com/Kirsten0604)
 
