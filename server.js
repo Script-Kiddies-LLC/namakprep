@@ -1,12 +1,14 @@
 var express = require('express');
 var app = express();
 
+const PORT = process.env.PORT || 3000;
+
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
   res.sendFile("index.html");
 });
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+app.listen(PORT, function () {
+  console.log('Your server is up and running on port:' + PORT);
 });
