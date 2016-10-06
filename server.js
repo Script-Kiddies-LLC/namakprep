@@ -1,12 +1,12 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
-app.get('/', function (req, res) {
-  res.send("Server is up");
-});
-
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+  res.sendFile("index.html");
+});
+
+app.listen(PORT, () => console.log(`Your server is up and running on port: ${PORT}`));
