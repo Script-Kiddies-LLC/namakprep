@@ -17,6 +17,14 @@ app.get('/about', (req, res) => {
   res.sendFile(__dirname + '/public/about.html');
 });
 
+app.get('/contact', (req, res) => {
+  res.sendFile(__dirname + '/public/contact.html');
+});
+
+app.get('/user', (req, res) => {
+  res.sendFile(__dirname + '/public/profile.html');
+});
+
 app.get('/*', (req, res) => {
   res.status(404).sendFile(__dirname + '/public/404.html')
 });
