@@ -13,8 +13,6 @@ To gain experience and have something to show employers.
 Our code will be deployed, but if you want to you can run it locally.
 
 ```
-Fork this repo 
-
 git clone https://github.com/namakakprep/namakprep.git
 
 Navigate into this directory
@@ -31,6 +29,8 @@ Will be using testing in the near future.
 ## Contributors
 
 [Viltaria](https://github.com/Viltaria)
+
 [Zicero](https://github.com/Zicero)
+
 [Kirsten0604](https://github.com/Kirsten0604)
 
