@@ -9,4 +9,16 @@ app.get('/', (req, res) => {
   res.sendFile("index.html");
 });
 
+app.get('/calendar', (req, res) => {
+  res.sendFile(__dirname + '/public/calendar.html')
+});
+
+app.get('/about', (req, res) => {
+  res.sendFile(__dirname + '/public/about.html');
+});
+
+app.get('/*', (req, res) => {
+  res.status(404).sendFile(__dirname + '/public/404.html')
+});
+
 app.listen(PORT, () => console.log(`Your server is up and running on port: ${PORT}`));
