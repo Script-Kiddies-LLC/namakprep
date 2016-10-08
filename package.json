@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/namakakprep/namakprep#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "bookshelf": "^0.10.2",
+    "express": "^4.14.0",
+    "knex": "^0.12.2"
   }
 }
