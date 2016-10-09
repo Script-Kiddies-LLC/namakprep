@@ -31,8 +31,8 @@ app.get('/login', (req, res) => {
   res.sendFile(__dirname + '/public/login.html');
 });
 
-app.get('/register', (req, res) => {
-  res.sendFile(__dirname + '/public/register.html');
+app.get('/admission', (req, res) => {
+  res.sendFile(__dirname + '/public/admission.html');
 });
 
 app.get('/user', (req, res) => {
