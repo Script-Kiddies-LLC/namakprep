@@ -2,8 +2,10 @@ const express = require('express');
 const app = express();
 
 const PORT = process.env.PORT || 3000;
+const user = require('./user');
 
 app.use(express.static('public'));
+app.use('/user', user);
 
 app.get('/', (req, res) => {
   res.sendFile("index.html");
@@ -11,6 +13,10 @@ app.get('/', (req, res) => {
 
 app.get('/calendar', (req, res) => {
   res.sendFile(__dirname + '/public/calendar.html')
+});
+
+app.get('/calendar/lunch-menu', (req, res) => {
+  res.sendFile(__dirname + '/public/')
 });
 
 app.get('/about', (req, res) => {
