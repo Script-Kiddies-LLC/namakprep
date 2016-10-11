@@ -1,42 +1,53 @@
-const express = require('express');
+ const express = require('express');
 const app = express();
+const bodyParser = require('body-parser')
 
 const PORT = process.env.PORT || 3000;
-const user = require('./routers/user');
+const user = require('./user');
 
 app.use(express.static('public'));
 app.use('/user', user);
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.render("index.html");
+  res.sendFile("index.html");
 });
 
 app.get('/calendar', (req, res) => {
-  res.render('calendar.html');
+  res.sendFile(__dirname + '/public/calendar.html')
 });
 
 app.get('/calendar/lunch-menu', (req, res) => {
-  // res.render('/');
+  res.sendFile(__dirname + '/public/')
 });
 
 app.get('/about', (req, res) => {
-  res.render('about.html');
+  res.sendFile(__dirname + '/public/about.html');
 });
 
 app.get('/contact', (req, res) => {
-  res.render('contact.html');
+  res.sendFile(__dirname + '/public/contact.html');
 });
 
 app.get('/login', (req, res) => {
-  res.render('login.html');
+  res.sendFile(__dirname + '/public/login.html');
 });
 
 app.get('/admission', (req, res) => {
-  res.render('admission.html');
+  res.sendFile(__dirname + '/public/admission.html');
+});
+
+app.get('/user', (req, res) => {
+  res.sendFile(__dirname + '/public/profile.html');
 });
 
 app.get('/*', (req, res) => {
-  res.status(404).render('404.html');
+  res.status(404).sendFile(__dirname + '/public/404.html')
+});
+
+app.post('/login', (req, res) => {
+  console.log(req.body)
 });
 
 app.listen(PORT, () => console.log(`Your server is up and running on port: ${PORT}`));
