@@ -1,14 +1,31 @@
- const express = require('express');
+const express = require('express');
 const app = express();
 const bodyParser = require('body-parser')
 
 const PORT = process.env.PORT || 3000;
-const user = require('./user');
+const user = require('./routers/user');
 
 app.use(express.static('public'));
 app.use('/user', user);
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
+
+var knex = require('knex')({
+  client: 'mysql',
+  connection: {
+    host     : '127.0.0.1',
+    user     : 'Kappa123',
+    password : 'KappaPride',
+    database : 'test',
+    charset  : 'utf8'
+  }
+});
+
+var bookshelf = require('bookshelf')(knex);
+
+var User = bookshelf.Model.extend({
+  tableName: 'users'
+});
 
 app.get('/', (req, res) => {
   res.sendFile("index.html");
