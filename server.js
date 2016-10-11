@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser')
 
 const PORT = process.env.PORT || 3000;
-const user = require('./user');
+const user = require('./routers/user');
 
 app.use(express.static('public'));
 app.use('/user', user);
