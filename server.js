@@ -2,45 +2,41 @@ const express = require('express');
 const app = express();
 
 const PORT = process.env.PORT || 3000;
-const user = require('./user');
+const user = require('./routers/user');
 
 app.use(express.static('public'));
 app.use('/user', user);
 
 app.get('/', (req, res) => {
-  res.sendFile("index.html");
+  res.render("index.html");
 });
 
 app.get('/calendar', (req, res) => {
-  res.sendFile(__dirname + '/public/calendar.html')
+  res.render('calendar.html');
 });
 
 app.get('/calendar/lunch-menu', (req, res) => {
-  res.sendFile(__dirname + '/public/')
+  // res.render('/');
 });
 
 app.get('/about', (req, res) => {
-  res.sendFile(__dirname + '/public/about.html');
+  res.render('about.html');
 });
 
 app.get('/contact', (req, res) => {
-  res.sendFile(__dirname + '/public/contact.html');
+  res.render('contact.html');
 });
 
 app.get('/login', (req, res) => {
-  res.sendFile(__dirname + '/public/login.html');
+  res.render('login.html');
 });
 
 app.get('/admission', (req, res) => {
-  res.sendFile(__dirname + '/public/admission.html');
-});
-
-app.get('/user', (req, res) => {
-  res.sendFile(__dirname + '/public/profile.html');
+  res.render('admission.html');
 });
 
 app.get('/*', (req, res) => {
-  res.status(404).sendFile(__dirname + '/public/404.html')
+  res.status(404).render('404.html');
 });
 
 app.listen(PORT, () => console.log(`Your server is up and running on port: ${PORT}`));
