@@ -7,7 +7,7 @@ const user = require('./routers/user');
 
 app.use(express.static('public'));
 app.use('/user', user);
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 var knex = require('knex')({
