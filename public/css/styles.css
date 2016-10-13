@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     color: #333;
     background-color: #fff;
@@ -7,3 +8,13 @@ h1 {
     color: yellow;
     margin-left: 20px;
 }
+=======
+/*File that is included in every html page*/
+/* COMMON STYLES */
+
+body {
+  background-color: #EEE;
+  color: #444;
+  font-size: 18px;
+}
+>>>>>>> 6949a991dc3dadf759e1311d0c0fb091b95359f7
