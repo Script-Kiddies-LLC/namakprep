@@ -1,9 +1,14 @@
-
 /*File that is included in every html page*/
 /* COMMON STYLES */
 body {
+<<<<<<< HEAD
 
     color: #333;
     background-color: #fff;
+=======
+  background-color: #EEE;
+  color: #444;
+  font-size: 18px;
+>>>>>>> 6949a991dc3dadf759e1311d0c0fb091b95359f7
 }
 

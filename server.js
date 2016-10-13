@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 
 const PORT = process.env.PORT || 3000;
 const user = require('./routers/user');
 
 app.use(express.static('public'));
 app.use('/user', user);
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 var knex = require('knex')({
