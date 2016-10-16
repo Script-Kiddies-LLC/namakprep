@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 
 const PORT = process.env.PORT || 3000;
 const user = require('./routers/user');
 
 app.use(express.static('public'));
 app.use('/user', user);
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 var knex = require('knex')({
@@ -32,11 +32,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/calendar', (req, res) => {
-  res.sendFile(__dirname + '/public/calendar.html')
+  res.sendFile(__dirname + '/public/calendar.html');
 });
 
 app.get('/calendar/lunch-menu', (req, res) => {
-  res.sendFile(__dirname + '/public/')
+  res.sendFile(__dirname + '/public/');
 });
 
 app.get('/about', (req, res) => {
@@ -60,11 +60,11 @@ app.get('/user', (req, res) => {
 });
 
 app.get('/*', (req, res) => {
-  res.status(404).sendFile(__dirname + '/public/404.html')
+  res.status(404).sendFile(__dirname + '/public/404.html');
 });
 
 app.post('/login', (req, res) => {
-  console.log(req.body)
+  console.log(req.body);
 });
 
 app.listen(PORT, () => console.log(`Your server is up and running on port: ${PORT}`));
