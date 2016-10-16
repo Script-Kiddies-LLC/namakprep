@@ -6,7 +6,6 @@ body {
   color: #444;
   font-size: 18px;
 }
-
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
   margin-bottom: 0;
@@ -37,4 +36,3 @@ footer {
     padding: 15px;
   }
   .row.content {height:auto;}
-}
