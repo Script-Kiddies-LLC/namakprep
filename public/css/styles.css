@@ -22,6 +22,10 @@ body {
   background-color: #ccffcc;
   padding: 10px;
 }
+
+button.admission {
+  margin-top: 20px;
+}
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
   margin-bottom: 0;
