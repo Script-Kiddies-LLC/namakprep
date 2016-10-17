@@ -11,8 +11,7 @@ h1 {
 /* COMMON STYLES */
 body {
   font-family: "Helvetica Neue";
-  background-color: #white; /*should be 6EDEE6 (blue)*/
-  color: #444;
+  background-color: #6EDEE6;
   font-size: 18px;
 }
 .mission {
