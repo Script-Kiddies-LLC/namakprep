@@ -11,7 +11,7 @@ h1 {
 /* COMMON STYLES */
 body {
   font-family: "Helvetica Neue";
-  background-color: #6EDEE6;
+  background-color: #white; /*should be 6EDEE6 (blue)*/
   color: #444;
   font-size: 18px;
 }
@@ -25,6 +25,10 @@ body {
 
 button.admission {
   margin-top: 20px;
+}
+
+.remind {
+  background-image: url("remind.PNG");
 }
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
