@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 body {
+<<<<<<< HEAD
     color: #333;
     background-color: #fff;
 }
@@ -9,6 +10,12 @@ h1 {
     margin-left: 20px;
 }
 =======
+<<<<<<< HEAD
+
+    color: #333;
+    background-color: #fff;
+>>>>>>> b3dc8e2cc4c37a93aaaf7611537533206e6bb21a
+=======
 /*File that is included in every html page*/
 /* COMMON STYLES */
 body {
@@ -16,7 +23,9 @@ body {
   background-color: #EEE;
   color: #444;
   font-size: 18px;
+>>>>>>> 6949a991dc3dadf759e1311d0c0fb091b95359f7
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 6949a991dc3dadf759e1311d0c0fb091b95359f7
 =======
@@ -57,3 +66,6 @@ footer {
   .row.content {height:auto;}
 }
 >>>>>>> 973f5a24027a7606f57b16277ae1fc5c64f880f4
+=======
+
+>>>>>>> b3dc8e2cc4c37a93aaaf7611537533206e6bb21a
