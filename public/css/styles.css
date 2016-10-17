@@ -1,11 +1,39 @@
+<<<<<<< HEAD
+body {
+<<<<<<< HEAD
+    color: #333;
+    background-color: #fff;
+}
+
+h1 {
+    color: yellow;
+    margin-left: 20px;
+}
+=======
+<<<<<<< HEAD
+
+    color: #333;
+    background-color: #fff;
+>>>>>>> b3dc8e2cc4c37a93aaaf7611537533206e6bb21a
+=======
 /*File that is included in every html page*/
 /* COMMON STYLES */
-
 body {
+<<<<<<< HEAD
   background-color: #EEE;
   color: #444;
   font-size: 18px;
+>>>>>>> 6949a991dc3dadf759e1311d0c0fb091b95359f7
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6949a991dc3dadf759e1311d0c0fb091b95359f7
+=======
+    color: #333;
+    background-color: #fff;
+}
+>>>>>>> e21c0bf198148b53a283be7269655b4361a48947
+=======
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
   margin-bottom: 0;
@@ -37,3 +65,7 @@ footer {
   }
   .row.content {height:auto;}
 }
+>>>>>>> 973f5a24027a7606f57b16277ae1fc5c64f880f4
+=======
+
+>>>>>>> b3dc8e2cc4c37a93aaaf7611537533206e6bb21a
