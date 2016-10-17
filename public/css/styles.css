@@ -10,9 +10,17 @@ h1 {
 /*File that is included in every html page*/
 /* COMMON STYLES */
 body {
+  font-family: "Helvetica Neue";
   background-color: #6EDEE6;
   color: #444;
   font-size: 18px;
+}
+.mission {
+  border-style: groove;
+  border-width: 10px;
+  border-color: teal;
+  background-color: #ccffcc;
+  padding: 10px;
 }
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
