@@ -27,9 +27,6 @@ button.admission {
   margin-top: 20px;
 }
 
-.remind {
-  background-image: url("remind.PNG");
-}
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
   margin-bottom: 0;
