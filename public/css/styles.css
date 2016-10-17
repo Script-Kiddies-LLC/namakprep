@@ -4,13 +4,13 @@ body {
 }
 
 h1 {
-    color: yellow;
+    color: black;
     margin-left: 20px;
 }
 /*File that is included in every html page*/
 /* COMMON STYLES */
 body {
-  background-color: #EEE;
+  background-color: #00DAE9;
   color: #444;
   font-size: 18px;
 }
