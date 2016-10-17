@@ -11,10 +11,15 @@ h1 {
 =======
 /*File that is included in every html page*/
 /* COMMON STYLES */
-
 body {
+<<<<<<< HEAD
   background-color: #EEE;
   color: #444;
   font-size: 18px;
 }
 >>>>>>> 6949a991dc3dadf759e1311d0c0fb091b95359f7
+=======
+    color: #333;
+    background-color: #fff;
+}
+>>>>>>> e21c0bf198148b53a283be7269655b4361a48947
