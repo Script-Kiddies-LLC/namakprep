@@ -1,4 +1,4 @@
-<h1 align="center">Namaka K Prep</h1>
+<h1 align="center">Na Maka Kindergarten Prep</h1>
 
 ***
 
