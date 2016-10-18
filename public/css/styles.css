@@ -1,11 +1,31 @@
+body {
+    color: #333;
+    background-color: #fff;
+}
+
+h1 {
+    color: black;
+    margin-left: 20px;
+}
 /*File that is included in every html page*/
 /* COMMON STYLES */
-
 body {
-  background-color: #EEE;
-  color: #444;
+  font-family: "Helvetica Neue";
+  background-color: #ccccff;
   font-size: 18px;
 }
+.mission {
+  border-style: groove;
+  border-width: 10px;
+  border-color: #fff;
+  background-color: #ccffcc;
+  padding: 10px;
+}
+
+button.admission {
+  margin-top: 20px;
+}
+
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
   margin-bottom: 50px;
@@ -36,3 +56,4 @@ footer {
     padding: 15px;
   }
   .row.content {height:auto;}
+}
