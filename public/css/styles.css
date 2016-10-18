@@ -6,15 +6,15 @@ h1 {
 /* COMMON STYLES */
 body {
   font-family: "Helvetica Neue";
-  background-color: #EEE;
+  background-color: #f2f2f2;
   font-size: 18px;
   color: #333;
 }
 .mission {
-  /*border-style: groove;*/
+  border-style: solid;
   /*border-width: 10px;*/
-  /*border-color: teal;*/
-  background-color: silver;
+  border-color: #fba69d;
+  background-color: #fee9e6;
   padding: 10px;
 }
 
@@ -31,7 +31,7 @@ button.admission {
 
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 450px}
+.row.content {height: 890px;}
 
 /* Set gray background color and 100% height */
 .sidenav {
