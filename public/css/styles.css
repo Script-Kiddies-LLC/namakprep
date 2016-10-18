@@ -1,8 +1,3 @@
-body {
-    color: #333;
-    background-color: #fff;
-}
-
 h1 {
     color: black;
     margin-left: 20px;
@@ -11,14 +6,15 @@ h1 {
 /* COMMON STYLES */
 body {
   font-family: "Helvetica Neue";
-  background-color: #ccccff;
+  background-color: #f2f2f2;
   font-size: 18px;
+  color: #333;
 }
 .mission {
-  border-style: groove;
-  border-width: 10px;
-  border-color: #fff;
-  background-color: #ccffcc;
+  border-style: solid;
+  /*border-width: 10px;*/
+  border-color: #fba69d;
+  background-color: #fee9e6;
   padding: 10px;
 }
 
@@ -28,12 +24,14 @@ button.admission {
 
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
-  margin-bottom: 50px;
+  margin-bottom: 0;
   border-radius: 0;
+  background-color: #fff;
 }
 
+
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 890px}
+.row.content {height: 890px;}
 
 /* Set gray background color and 100% height */
 .sidenav {
@@ -56,4 +54,7 @@ footer {
     padding: 15px;
   }
   .row.content {height:auto;}
+}
+.nav > li > a {
+  color: black !important;
 }
