@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 h1 {
     color: black;
     margin-left: 20px;
@@ -7,8 +8,8 @@ h1 {
 /* COMMON STYLES */
 body {
   font-family: 'Montserrat', Arial;
-  background: #EBEBEB; 
-  font-size: 18px;
+  background: #EBEBEB;
+  font-size: 16px;
   color: #333;
 }
 .mission {
@@ -23,7 +24,6 @@ body {
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
   margin-bottom: 0;
-  text-indent: 40px;
   border-radius: 0;
   background-color: #fff;
   text-align: center;
