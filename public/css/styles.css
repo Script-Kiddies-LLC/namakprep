@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 h1 {
     color: black;
     margin-left: 20px;
@@ -5,30 +6,29 @@ h1 {
 /*File that is included in every html page*/
 /* COMMON STYLES */
 body {
-  font-family: "Helvetica Neue";
-  background-color: #f2f2f2;
+  font-family: 'Montserrat', Arial;
+  background: #EBEBEB; 
   font-size: 18px;
   color: #333;
 }
 .mission {
   border-style: solid;
+  margin-left: 200px;
+  text-align: center;
   /*border-width: 10px;*/
   border-color: #fba69d;
   background-color: #fee9e6;
   padding: 10px;
 }
 
-button.admission {
-  margin-top: 20px;
-}
-
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
   margin-bottom: 0;
+  text-indent: 40px;
   border-radius: 0;
   background-color: #fff;
+  text-align: center;
 }
-
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {height: 890px;}
@@ -38,6 +38,7 @@ button.admission {
   padding-top: 20px;
   background-color: #f1f1f1;
   height: 100%;
+  margin-left: 100px;
 }
 
 /* Set black background color, white text and some padding */
