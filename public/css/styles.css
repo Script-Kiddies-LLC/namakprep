@@ -13,7 +13,6 @@ body {
 }
 .mission {
   border-style: solid;
-  margin-left: 200px;
   text-align: center;
   /*border-width: 10px;*/
   border-color: #fba69d;
@@ -38,7 +37,6 @@ body {
   padding-top: 20px;
   background-color: #f1f1f1;
   height: 100%;
-  margin-left: 100px;
 }
 
 /* Set black background color, white text and some padding */
