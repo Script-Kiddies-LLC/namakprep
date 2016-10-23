@@ -59,6 +59,14 @@ app.get('/user', (req, res) => {
   res.sendFile(__dirname + '/public/profile.html');
 });
 
+app.get('/parents', (req, res) => {
+  res.sendFile(__dirname + '/public/parents.html');
+});
+
+app.get('/blog', (req, res) => {
+  res.sendFile(__dirname + '/public/blog.html');
+});
+
 app.get('/*', (req, res) => {
   res.status(404).sendFile(__dirname + '/public/404.html');
 });
