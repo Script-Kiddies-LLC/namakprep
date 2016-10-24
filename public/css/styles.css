@@ -14,7 +14,7 @@ body {
   font-size: 18px;
 
   font-family: 'Montserrat', Arial;
-  background: #EBEBEB;
+  background: #fff;
   font-size: 16px;
 
   color: #333;
@@ -25,11 +25,11 @@ body {
 }
 
 .mission {
-  border-style: solid;
+  /*--border-style: solid;
   text-align: center;
   /*border-width: 10px;*/
   border-color: #0066FE;
-  background-color: #84CDEC;
+  background-color: #fff;
   padding: 10px;
 }
 
@@ -37,7 +37,7 @@ body {
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
-  background-color: #fff;
+  background-color: #9fff80;
   text-align: center;
 }
 .navbar .navbar-nav {
@@ -55,7 +55,7 @@ body {
 /* Set gray background color and 100% height */
 .sidenav {
   padding-top: 20px;
-  background-color: #f1f1f1;
+  background-color: #fff;
   height: 100%;
 }
 
