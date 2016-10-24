@@ -7,17 +7,24 @@ h1 {
 /*File that is included in every html page*/
 /* COMMON STYLES */
 body {
+
+  font-family: "Helvetica Neue";
+
+  background-color: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) ); /*#f2f2f2*/
+  font-size: 18px;
+
   font-family: 'Montserrat', Arial;
   background: #EBEBEB;
   font-size: 16px;
+
   color: #333;
 }
 .mission {
   border-style: solid;
   text-align: center;
   /*border-width: 10px;*/
-  border-color: #fba69d;
-  background-color: #fee9e6;
+  border-color: #0066FE;
+  background-color: #84CDEC;
   padding: 10px;
 }
 
@@ -30,7 +37,7 @@ body {
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 890px;}
+.row.content {height: 1500px;}
 
 /* Set gray background color and 100% height */
 .sidenav {
