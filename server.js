@@ -71,7 +71,7 @@ app.get('/*', (req, res) => {
   res.status(404).sendFile(__dirname + '/public/404.html');
 });
 
-app.post('/login', (req, res) => {
+app.post('/admission', (req, res) => {
   console.log(req.body);
 });
 
