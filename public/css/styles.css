@@ -43,12 +43,16 @@ body {
    float: none;
 }
 
+button > a {
+  color: #fff;
+}
+
 .navbar .navbar-collapse {
    text-align: center;
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 1500px;}
+.row.content {height: 850px;}
 
 /* Set gray background color and 100% height */
 .sidenav {
