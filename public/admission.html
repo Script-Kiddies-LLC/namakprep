@@ -22,12 +22,13 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li class="active"><img src="//nebula.wsimg.com/152ed0bd2be706aa400ea609615f8e86?AccessKeyId=2341D4BB9DE0A3392676&disposition=0&alloworigin=1" height="50" width="50"></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="calendar.html">Calendar</a></li>
-          <li><a href="admission.html">Enrollment</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="parents.html">Parent Resources</a></li>
+          <li style="background-color:red;"><a href="index.html">Home</a></li>
+          <li style="background-color: orange;"><a href="about.html">About</a></li>
+          <li style="background-color: yellow"><a href="calendar.html">Calendar</a></li>
+          <li style="background-color: green"><a href="admission.html">Enrollment</a></li>
+          <li style="background-color: blue"><a href="contact.html">Contact</a></li>
+          <li style="background-color: indigo"><a href="parents.html">Parent Resources</a></li>
+					<li style="width:400px;"></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -44,30 +45,77 @@
 				<h1 style="text-align: center">Enroll Your Child</h1>
 				<hr>
 				<button onclick><a href= "files/enrollment_form.pdf" title="enrollment">Enrollment Form</a></button>
-				<p>
-				<h3>2016-2017 School Year Tuition and Fees</h3>
-				<h4>Fees:</h4>
-				Registration fee (yearly) - $100 (non-refundable)<br>
-				Early drop off fee - $10 (if dropped off before 6:50am)<br>
-				Late pick up fee - $10 per half hour (after 2:15pm if not enrolled in extended<br>
-				care)
-				<h4>Option A: 12 hr. day (6am-6pm) (M-F)</h4>
-				$925/month (10 months)<br>
-				Or<br>
-				$900/month if paid in full ($9,000)<br>
-				by July 15th ($250 discount)<br>
-				<h4>Option B: 7hr. day (7am – 2pm) (M-F)</h4>
-				$750/ month (10 months)<br>
-				Or<br>
-				$725/month if paid in full ($7,250)<br>
-				by July 15th ($250 discount)<br>
-				<h4>Option C: 4hr. day (8am-12noon) (M-F)</h4>
-				$650/ month (10 months)<br>
-				Or<br>
-				$625/ month if paid in full ($6,250)<br>
-				by July 15th ($250 discount)
-				</p>
-
+				<div class="row">
+					<div class="col-sm-6 text-left">
+						<p>
+						<h3>2016-2017 School Year Tuition and Fees</h3>
+						<h4>Fees:</h4>
+						Registration fee (yearly) - $100 (non-refundable)<br>
+						Early drop off fee - $10 (if dropped off before 6:50am)<br>
+						Late pick up fee - $10 per half hour (after 2:15pm if not enrolled <br>in extended care)
+						<hr>
+						<h4>Option A: 12 hr. day (6am-6pm) (M-F)</h4>
+						$925/month (10 months)<br>
+						Or<br>
+						$900/month if paid in full ($9,000)<br>
+						by July 15th ($250 discount)<br>
+						<hr>
+						<h4>Option B: 7hr. day (7am – 2pm) (M-F)</h4>
+						$750/ month (10 months)<br>
+						Or<br>
+						$725/month if paid in full ($7,250)<br>
+						by July 15th ($250 discount)<br>
+						<hr>
+						<h4>Option C: 4hr. day (8am-12noon) (M-F)</h4>
+						$650/ month (10 months)<br>
+						Or<br>
+						$625/ month if paid in full ($6,250)<br>
+						by July 15th ($250 discount)
+						<hr>
+						</p>
+					</div>
+					<div class="col-sm-1">
+					</div>
+					<div class="col-sm-5 text-left">
+						<h3 style="text-align: center">Enroll your child!</h3>
+						<form method="post">
+						  <div class="form-group">
+						    <label for="name">Name</label>
+						    <input type="text" class="form-control" id="name" placeholder="Enter name">
+						  </div>
+						  <div class="form-group">
+						    <label for="phone">Phone</label>
+						    <input type="tel" class="form-control" id="phone" placeholder="Phone #">
+						  </div>
+							<div class="form-group">
+								<label for="email">Email address</label>
+								<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+								<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							</div>
+							<div class="form-group">
+								<label for="childna">Child's name & age</label>
+								<input type="text" class="form-control" id="childna" placeholder="Child's name/age">
+							</div>
+							<div class="form-group">
+								<label for="date">I would like my child to start attending school on...</label>
+								<input type="date" class="form-control" id="date" placeholder="Enter a date">
+							</div>
+						  <div class="form-group">
+						    <label for="option">Pick an option</label>
+						    <select class="form-control" id="option">
+						      <option>Option A</option>
+						      <option>Option B</option>
+						      <option>Option C</option>
+						    </select>
+							</div>
+						  <div class="form-group">
+						    <label for="exampleTextarea">Comments</label>
+						    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+							</div>
+						  <button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+				</div>
 				<form method="post">
 
 				</form>

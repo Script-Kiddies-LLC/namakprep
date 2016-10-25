@@ -14,7 +14,7 @@ body {
   font-size: 18px;
 
   font-family: 'Montserrat', Arial;
-  background: #fff;
+  background-image: url("/files/p6.png");
   font-size: 16px;
 
   color: #333;
@@ -28,8 +28,6 @@ body {
   /*--border-style: solid;
   text-align: center;
   /*border-width: 10px;*/
-  border-color: #0066FE;
-  background-color: #fff;
   padding: 10px;
 }
 
@@ -37,7 +35,7 @@ body {
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
-  background-color: #9fff80;
+  background-color: #fff;
   text-align: center;
 }
 .navbar .navbar-nav {
@@ -55,7 +53,7 @@ body {
 /* Set gray background color and 100% height */
 .sidenav {
   padding-top: 20px;
-  background-color: #fff;
+  background-image: url("/files/p6.png");
   height: 100%;
 }
 
