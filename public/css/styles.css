@@ -14,7 +14,7 @@ body {
   font-size: 18px;
 
   font-family: 'Montserrat', Arial;
-  background-image: url("/files/p6.png");
+  background-image: url("/files/paper_fibers.png");
   font-size: 16px;
 
   color: #333;
@@ -43,17 +43,21 @@ body {
    float: none;
 }
 
+button > a {
+  color: #fff;
+}
+
 .navbar .navbar-collapse {
    text-align: center;
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 1500px;}
+.row.content {height: 850px;}
 
 /* Set gray background color and 100% height */
 .sidenav {
   padding-top: 20px;
-  background-image: url("/files/p6.png");
+  background-image: url("/files/paper_fibers.png");
   height: 100%;
 }
 
