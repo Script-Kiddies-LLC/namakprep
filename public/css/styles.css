@@ -14,7 +14,7 @@ body {
   font-size: 18px;
 
   font-family: 'Montserrat', Arial;
-  background-image: url("/files/p6.png");
+  background-image: url("/files/paper_fibers.png");
   font-size: 16px;
 
   color: #333;
@@ -57,7 +57,7 @@ button > a {
 /* Set gray background color and 100% height */
 .sidenav {
   padding-top: 20px;
-  background-image: url("/files/p6.png");
+  background-image: url("/files/paper_fibers.png");
   height: 100%;
 }
 
