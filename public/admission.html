@@ -19,6 +19,10 @@
         </button>
         <a class="navbar-brand" href="#">Logo</a>
       </div> -->
+			<div class="row">
+			<div class="col-sm-2">
+			</div>
+			<div class="col-sm-10">
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li class="active"><img src="//nebula.wsimg.com/152ed0bd2be706aa400ea609615f8e86?AccessKeyId=2341D4BB9DE0A3392676&disposition=0&alloworigin=1" height="60" width="60"></li>
@@ -28,15 +32,15 @@
           <li style="background-color: green"><a href="admission.html">Enrollment</a></li>
 					<li style="background-color: #66ffff"><a href="contact.html">Contact</a></li>
           <li style="background-color: blue"><a href="parents.html">Parent Resources</a></li>
-					<li style="width:400px;"></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </ul>
       </div>
+		</div>
+		</div>
     </div>
   </nav>
-
   <div class="container-fluid text-center">
     <div class="row content">
 			<div class="col-sm-2 sidenav">
@@ -79,39 +83,41 @@
 					</div>
 					<div class="col-sm-5 text-left">
 						<h3 style="text-align: center">Enroll your child!</h3>
-						<form method="post">
+						<small class="form-text text-muted bg-danger">* denotes a required field</small>
+						<form action="http://formspree.io/ttejero@hawaii.edu" method="post">
+							<input type="hidden" name="_next" value="thankyou.html" />
 						  <div class="form-group">
-						    <label for="name">Name</label>
-						    <input type="text" class="form-control" id="name" placeholder="Enter name">
+						    <label for="name">Name*</label>
+						    <input type="text" name="parName" class="form-control" id="name" placeholder="Enter name" required>
 						  </div>
 						  <div class="form-group">
-						    <label for="phone">Phone</label>
-						    <input type="tel" class="form-control" id="phone" placeholder="Phone #">
+						    <label for="phone">Phone*</label>
+						    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Phone #" required>
 						  </div>
 							<div class="form-group">
-								<label for="email">Email address</label>
-								<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+								<label for="email">Email address*</label>
+								<input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
 								<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 							</div>
 							<div class="form-group">
-								<label for="childna">Child's name & age</label>
-								<input type="text" class="form-control" id="childna" placeholder="Child's name/age">
+								<label for="childna">Child's name & age*</label>
+								<input type="text" name="childNameAge" class="form-control" id="childna" placeholder="Child's name/age" required>
 							</div>
 							<div class="form-group">
-								<label for="date">I would like my child to start attending school on...</label>
-								<input type="date" class="form-control" id="date" placeholder="Enter a date">
+								<label for="date">I would like my child to start attending school on...*</label>
+								<input type="date" name="DoA" class="form-control" id="date" placeholder="Enter a date" required>
 							</div>
 						  <div class="form-group">
-						    <label for="option">Pick an option</label>
-						    <select class="form-control" id="option">
-						      <option>Option A</option>
-						      <option>Option B</option>
-						      <option>Option C</option>
+						    <label for="option">Pick an option*</label>
+						    <select class="form-control" name="option" id="option" required>
+						      <option>Option A (12 hour day)</option>
+						      <option>Option B (7 hour day)</option>
+						      <option>Option C (4 hour day)</option>
 						    </select>
 							</div>
 						  <div class="form-group">
 						    <label for="exampleTextarea">Comments</label>
-						    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+						    <textarea class="form-control" name="comments" id="exampleTextarea" rows="3"></textarea>
 							</div>
 						  <button type="submit" class="btn btn-primary">Submit</button>
 						</form>

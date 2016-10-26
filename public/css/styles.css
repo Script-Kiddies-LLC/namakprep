@@ -4,6 +4,11 @@ h1 {
     color: black;
     margin-left: 20px;
 }
+.nav>li> a:hover{
+  color: #fff !important;
+  background-color:hotpink;
+}
+
 /*File that is included in every html page*/
 /* COMMON STYLES */
 body {
@@ -36,7 +41,7 @@ body {
   margin-bottom: 0;
   border-radius: 0;
   background-color: #fff;
-  text-align: center;
+  text-align: left;
 }
 .navbar .navbar-nav {
    display: inline-block;
@@ -48,7 +53,7 @@ button > a {
 }
 
 .navbar .navbar-collapse {
-   text-align: center;
+   text-align: left;
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
