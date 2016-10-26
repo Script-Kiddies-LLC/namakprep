@@ -4,6 +4,11 @@ h1 {
     color: black;
     margin-left: 20px;
 }
+.nav>li> a:hover{
+  color: #fff !important;
+  background-color:hotpink;
+}
+
 /*File that is included in every html page*/
 /* COMMON STYLES */
 body {
