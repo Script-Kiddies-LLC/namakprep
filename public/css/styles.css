@@ -9,7 +9,7 @@ h1 {
 }
 .nav>li> a:hover{
   color: #fff !important;
-  background-color:hotpink;
+  background-color: transparent;
 }
 
 /*File that is included in every html page*/
