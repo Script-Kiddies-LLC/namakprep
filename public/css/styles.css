@@ -36,7 +36,7 @@ body {
   margin-bottom: 0;
   border-radius: 0;
   background-color: #fff;
-  text-align: center;
+  text-align: left;
 }
 .navbar .navbar-nav {
    display: inline-block;
@@ -48,7 +48,7 @@ button > a {
 }
 
 .navbar .navbar-collapse {
-   text-align: center;
+   text-align: left;
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
