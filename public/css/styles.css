@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Fresca');
 
 h1 {
     color: black;
-    margin-left: 20px;
+    font-family: 'Fresca', sans-serif;
+    font-size: 40px;
+
 }
 .nav>li> a:hover{
   color: #fff !important;
-  background-color:hotpink;
+  background-color: transparent;
 }
 
 /*File that is included in every html page*/
@@ -57,7 +60,7 @@ button > a {
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 850px;}
+.row.content {height: 790px;}
 
 /* Set gray background color and 100% height */
 .sidenav {
@@ -71,6 +74,11 @@ footer {
   background-color: #555;
   color: white;
   padding: 15px;
+}
+
+footer > div > a {
+  margin-left: 20px;
+  color: #fff;
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
