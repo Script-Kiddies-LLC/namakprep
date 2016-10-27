@@ -45,6 +45,7 @@ body {
   border-radius: 0;
   background-color: #fff;
   text-align: left;
+
 }
 .navbar .navbar-nav {
    display: inline-block;
@@ -73,12 +74,40 @@ button > a {
 footer {
   background-color: #555;
   color: white;
-  padding: 15px;
+  padding: 5px;
+}
+
+footer > div > p{
+  margin-bottom: 0px;
+}
+
+footer > div{
+  margin-top: 25px;
+  margin-bottom: 0px;
 }
 
 footer > div > a {
   margin-left: 20px;
   color: #fff;
+}
+
+@keyframes fadeInUp {
+0% {
+opacity: 0;
+transform: translateY(20px);
+}
+
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.fadeInUp {
+-webkit-animation-name: fadeInUp;
+-moz-animation-name: fadeInUp;
+-o-animation-name: fadeInUp;
+animation-name: fadeInUp;
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
