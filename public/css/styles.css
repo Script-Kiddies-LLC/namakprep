@@ -7,9 +7,38 @@ h1 {
     font-size: 40px;
 
 }
+
 .nav>li> a:hover{
   color: #fff !important;
   background-color: transparent;
+  transition:all 0.3s ease;
+  animation: shake .5s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-10px);
+  }
+
+  40% {
+    transform: translateX(10px);
+  }
+
+  60% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /*File that is included in every html page*/
@@ -28,6 +57,10 @@ body {
   color: #333;
 }
 
+.form-control {
+  background-color: #fcfcfc;
+}
+
 .carousel-control.left, .carousel-control.right {
    background-image: none;
 }
@@ -43,7 +76,7 @@ body {
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
-  background-color: #fff;
+  background-color: #00b7c4;
   text-align: left;
 
 }
@@ -75,6 +108,7 @@ footer {
   background-color: #555;
   color: white;
   padding: 5px;
+  position: static;
 }
 
 footer > div > p{
@@ -84,30 +118,12 @@ footer > div > p{
 footer > div{
   margin-top: 25px;
   margin-bottom: 0px;
+  animation: fadeInRight 8s ease-in-out;
 }
 
 footer > div > a {
   margin-left: 20px;
   color: #fff;
-}
-
-@keyframes fadeInUp {
-0% {
-opacity: 0;
-transform: translateY(20px);
-}
-
-100% {
-opacity: 1;
-transform: translateY(0);
-}
-}
-
-.fadeInUp {
--webkit-animation-name: fadeInUp;
--moz-animation-name: fadeInUp;
--o-animation-name: fadeInUp;
-animation-name: fadeInUp;
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
@@ -120,4 +136,34 @@ animation-name: fadeInUp;
 }
 .nav > li > a {
   color: black !important;
+}
+
+.nav > li {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin-top:5px;
+  margin-right: 4px;
+  animation: fadeInDown 1s ease-in;
+}
+
+@keyframes fadeInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes fadeInDown {
+   0% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
 }
