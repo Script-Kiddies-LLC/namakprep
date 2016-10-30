@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Fresca');
 
-<<<<<<< HEAD
+
 /* @media screen and (max-width: 414px) {
   [class*="col-"] {
     width: 100% !important;
@@ -12,9 +12,9 @@
 } */
 
 *{
-=======
+
  * {
->>>>>>> 8f0d3032c1c6a6fa7bf69e2fdf842b5e55cfcebd
+
   max-width: 100%;
   max-height: 100%;
 }
