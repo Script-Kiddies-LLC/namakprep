@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Fresca');
 
+/* @media screen and (max-width: 414px) {
+  [class*="col-"] {
+    width: 100% !important;
+    }
+  [class*="footer.container-fluid.text-center"] {
+    width: 100% !important;
+  }
+} */
+
 *{
   max-width: 100%;
   max-height: 100%;
@@ -130,7 +139,9 @@ footer > div > a {
     height: auto;
     padding: 15px;
   }
-  .row.content {height:auto;}
+  .row.content {
+    height: auto;
+  }
 }
 .nav > li > a {
   color: black !important;
