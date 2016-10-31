@@ -1,20 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Fresca');
 
+nav select {
+  display: none;
+}
 
-/* @media screen and (max-width: 414px) {
-  [class*="col-"] {
-    width: 100% !important;
-    }
-  [class*="footer.container-fluid.text-center"] {
-    width: 100% !important;
-  }
-} */
 
-*{
+
 
  * {
-
   max-width: 100%;
   max-height: 100%;
 }
@@ -137,18 +131,23 @@ footer > div > div > a {
   color: #fff;
 }
 
-/* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) {
+@media screen and (max-device-width: 736px) {
   .sidenav {
     height: auto;
     padding: 15px;
   }
-
   .row.content {
-    height: auto;
+    height:100%;
   }
+  nav ul {
+    display: none !important;
+  }
+  nav select {
+    display: inline-block;
+    float: right;
+    
 
-  .row.content {height:100%;}
+  }
 }
 .nav > li > a {
   color: black !important;
