@@ -1,31 +1,62 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Fresca');
 
+ * {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 h1 {
     color: black;
     font-family: 'Fresca', sans-serif;
     font-size: 40px;
 
 }
-.nav>li> a:hover{
+
+.nav >li > a:hover{
   color: #fff !important;
   background-color: transparent;
+  transition:all 0.3s ease;
+  animation: shake .5s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-10px);
+  }
+
+  40% {
+    transform: translateX(10px);
+  }
+
+  60% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /*File that is included in every html page*/
 /* COMMON STYLES */
 body {
-
-  font-family: "Helvetica Neue";
-
-  background-color: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) ); /*#f2f2f2*/
-  font-size: 18px;
-
+  font-size: 16px;
   font-family: 'Montserrat', Arial;
   background-image: url("/files/paper_fibers.png");
-  font-size: 16px;
-
   color: #333;
+}
+
+.form-control {
+  background-color: #fcfcfc;
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -43,8 +74,9 @@ body {
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
-  background-color: #fff;
+  background-color: #00b7c4;
   text-align: left;
+
 }
 .navbar .navbar-nav {
    display: inline-block;
@@ -60,7 +92,7 @@ button > a {
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 790px;}
+.row.content {height: 820px;}
 
 /* Set gray background color and 100% height */
 .sidenav {
@@ -73,10 +105,21 @@ button > a {
 footer {
   background-color: #555;
   color: white;
-  padding: 15px;
+  padding: 5px;
+  position: static;
 }
 
-footer > div > a {
+footer > div > p{
+  margin-bottom: 0;
+}
+
+footer > div{
+  margin-top: 25px;
+  margin-bottom: 0;
+  animation: fadeInRight 8s ease-in-out;
+}
+
+footer > div > div > a {
   margin-left: 20px;
   color: #fff;
 }
@@ -87,8 +130,38 @@ footer > div > a {
     height: auto;
     padding: 15px;
   }
-  .row.content {height:auto;}
+  .row.content {height:100%;}
 }
 .nav > li > a {
   color: black !important;
+}
+
+.nav > li {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin-top:5px;
+  margin-right: 4px;
+  animation: fadeInDown 1s ease-in;
+}
+
+@keyframes fadeInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes fadeInDown {
+   0% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
 }
