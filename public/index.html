@@ -45,9 +45,15 @@
         </ul>
 
 		<style>
-.dropdown {
+	.dropdown {
     position: relative;
-    display: inline-block;
+    display: none;
+    float: left;
+}
+
+@media (max-width: 736px) {
+  nav ul     { display: none; }
+  .dropdown { display: inline-block; }
 }
 
 .dropdown-content {
@@ -76,7 +82,7 @@
 </style>
 
 		<div class="dropdown">
-  			<button class="dropbtn">Dropdown</button>
+  			<button class="dropbtn">Options</button>
   			<div class="dropdown-content">
     			<a href="index.html">Home</a>
     			<a href="about.html">About</a>
@@ -86,21 +92,6 @@
     			<a href="parents.html">Parent Resources</a>
   			</div>
 		</div>
-
-
-
-
-
-        <select>
-        <option value="" selected="selected">Select</option>
-        	<option value= "index.html">Home</option>
-  			<option value="about.html">About</option>
-  			<option value="calendar.html">Calendar</option>
-  			<option value="admission.html">Enrollment</option>
-  			<option value="contact.html">Contact</option>
-  			<option value="parents.html">Parent Resources</option>
-  			<option value="login.html">Login</option>
-		</select>
       </div>
 		</div>
 		</div>

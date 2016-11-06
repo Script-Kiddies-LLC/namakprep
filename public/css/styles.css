@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Fresca');
 
-nav select {
-  display: none;
-}
-
-
  * {
   max-width: 100%;
   max-height: 100%;
@@ -137,16 +132,8 @@ footer > div > div > a {
   .row.content {
     height:100%;
   }
-  nav ul {
-    display: none !important;
-  }
-  nav select {
-    display: inline-block;
-    float: right;
-    
-
-  }
 }
+
 .nav > li > a {
   color: black !important;
 }
