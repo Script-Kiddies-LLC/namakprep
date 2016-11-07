@@ -75,4 +75,12 @@ app.post('/admission', (req, res) => {
   console.log(req.body);
 });
 
+app.post('/login', (req, res) => {
+  console.log(req.body);
+});
+
+app.post('/contact', (req, res) => {
+  console.log(req.body);
+});
+
 app.listen(PORT, () => console.log(`Your server is up and running on port: ${PORT}`));
