@@ -31,7 +31,7 @@
       </div> -->
 			<div class="row">
 			<div class="col-sm-10 col-sm-offset-2">
-      <div class="collapse navbar-collapse" id="myNavbar">
+      <div id="myNavbar">
         <ul class="nav navbar-nav">
           <li style="background-color:red;"><a href="index.html">Home</a></li>
           <li style="background-color: orange;"><a href="about.html">About</a></li>
@@ -48,26 +48,37 @@
 	.dropdown {
     position: relative;
     display: none;
-    float: left;
+    float: right;
 }
 
-@media (max-width: 736px) {
-  nav ul     { display: none; }
-  .dropdown { display: inline-block; }
+@media (max-width: 568px) {
+  #myNavbar > ul   { display: none; }
+  .dropdown { display: inline-block;
+		background-color: hotpink;
+	}
+	#myCarousel {
+		width: 105%;
+		margin-top: 100px;
+		height: 250px !important;
+	}
 }
 
 .dropdown-content {
-    display: none;
+    display: inline;
+		z-index: 1000;
     position: absolute;
-    background-color: #eee;
+    background-color: hotpink;
     min-width: 160px;
+		margin-left: -100px;
 }
 
-.dropdown-content a {
+.dropdown-content > a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+		text-align: left;
+		background-color: hotpink;
 }
 
 .dropdown-content a:hover {background-color: hotpink}
@@ -82,7 +93,7 @@
 </style>
 
 		<div class="dropdown">
-  			<button class="dropbtn">Options</button>
+  			<button class="dropbtn"><span class="glyphicon glyphicon-list-alt"></span></button>
   			<div class="dropdown-content">
     			<a href="index.html">Home</a>
     			<a href="about.html">About</a>
@@ -97,10 +108,10 @@
 		</div>
     </div>
   </nav>
-	<div class="container" style="background-color: transparent; height: 105px; margin-top: 10px;">
+	<div class="container" style="background-color: transparent; height: 105px; margin-top: 10px; z-index: 0;">
 	<div class="row">
 	<div class="col-sm-2 col-sm-offset-1">
-		<img src="files/namaka.png" alt="NaMaka" style="height: 105px; width: 105px; float: right;">
+		<img src="files/namaka.png" alt="NaMaka" style="height: 105px; width: 105px; float: left;">
 	</div>
 	<div class="col-sm-9 text-left">
 		<h1 style="margin-top: 30px; color: green">Na Maka Kindergarten Prep School</h1>
