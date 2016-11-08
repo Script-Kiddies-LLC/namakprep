@@ -1,170 +1,251 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Fresca');
-
-
- * {
-  max-width: 100%;
-  max-height: 100%;
+* {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 h1 {
     color: black;
     font-family: 'Fresca', sans-serif;
     font-size: 40px;
-
 }
 
-.nav >li > a:hover{
-  color: #fff !important;
-  background-color: transparent;
-  transition:all 0.3s ease;
-  animation: shake .5s ease-in-out;
-}
-
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-
-  20% {
-    transform: translateX(-10px);
-  }
-
-  40% {
-    transform: translateX(10px);
-  }
-
-  60% {
-    transform: translateX(-10px);
-  }
-
-  80% {
-    transform: translateX(10px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-/*File that is included in every html page*/
-/* COMMON STYLES */
 body {
-  font-size: 16px;
-  font-family: 'Montserrat', Arial;
-  background-image: url("/files/paper_fibers.png");
-  color: #333;
+    font-size: 16px;
+    font-family: 'Montserrat', Arial;
+    background-image: url("/files/paper_fibers.png");
+    color: #333;
+}
+
+button>a {
+    color: #fff;
+}
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 5px;
+    position: static;
+}
+
+footer>div>p {
+    margin-bottom: 0;
+}
+
+footer>div {
+    margin-top: 25px;
+    margin-bottom: 0;
+    animation: fadeInRight 8s ease-in-out;
+}
+
+footer>div>div>a {
+    margin-left: 20px;
+    color: #fff;
 }
 
 .form-control {
-  background-color: #fcfcfc;
+    background-color: #fcfcfc;
 }
 
 .carousel-control.left, .carousel-control.right {
-   background-image: none;
+    background-image: none;
 }
 
 .mission {
-  /*--border-style: solid;
+    /*--border-style: solid;
   text-align: center;
   /*border-width: 10px;*/
-  padding: 10px;
+    padding: 10px;
 }
+
 
 /* Remove the navbar's default margin-bottom and rounded borders */
+
 .navbar {
-  margin-bottom: 0;
-  border-radius: 0;
-  background-color: #00b7c4;
-  text-align: left;
-
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #00b7c4;
+    text-align: left;
 }
+
+.nav>li {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-right: 4px;
+    animation: fadeInDown 1s ease-in;
+}
+
+.nav>li>a {
+    color: black !important;
+}
+
+.nav>li>a:hover {
+    color: #fff !important;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    animation: shake .5s ease-in-out;
+}
+
 .navbar .navbar-nav {
-   display: inline-block;
-   float: none;
-}
-
-button > a {
-  color: #fff;
+    display: inline-block;
+    float: none;
 }
 
 .navbar .navbar-collapse {
-   text-align: left;
+    text-align: left;
 }
+
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 820px;}
+
+.row.content {
+    height: 820px;
+}
+
 
 /* Set gray background color and 100% height */
+
 .sidenav {
-  padding-top: 20px;
-  background-image: url("/files/paper_fibers.png");
-  height: 100%;
-}
-
-/* Set black background color, white text and some padding */
-footer {
-  background-color: #555;
-  color: white;
-  padding: 5px;
-  position: static;
-}
-
-footer > div > p{
-  margin-bottom: 0;
-}
-
-footer > div{
-  margin-top: 25px;
-  margin-bottom: 0;
-  animation: fadeInRight 8s ease-in-out;
-}
-
-footer > div > div > a {
-  margin-left: 20px;
-  color: #fff;
-}
-
-@media screen and (max-device-width: 568px) {
-  .sidenav {
-    height: auto;
-    padding: 15px;
-  }
-  .row.content {
-    height:100%;
-  }
-}
-
-.nav > li > a {
-  color: black !important;
-}
-
-.nav > li {
-  border: 2px solid transparent;
-  border-radius: 5px;
-  margin-top:5px;
-  margin-right: 4px;
-  animation: fadeInDown 1s ease-in;
+    padding-top: 20px;
+    background-image: url("/files/paper_fibers.png");
+    height: 100%;
 }
 
 @keyframes fadeInRight {
-   0% {
-      opacity: 0;
-      transform: translateX(20px);
-   }
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @keyframes fadeInDown {
-   0% {
-      opacity: 0;
-      transform: translateY(-20px);
-   }
-   100% {
-      opacity: 1;
-      transform: translateY(0);
-   }
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-10px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.dropdown {
+    position: fixed;
+    display: none;
+    z-index: 999;
+    top: 5px;
+    right: 10px;
+}
+
+.dropdown-menu {
+    z-index: 1000;
+    background-color: #fff;
+    min-width: 160px;
+    margin-left: -100px;
+}
+
+.dropdown-menu>a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: #fff;
+}
+
+.dropdown-menu>a:active {
+    background-color: silver
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .btn-secondary {
+    background-color: #fff;
+}
+
+@media (max-width: 901px) {
+    #myNavbar>ul {
+        display: none;
+    }
+    .dropdown {
+        display: inline-block;
+        background-color: #fff;
+    }
+    .navbar {
+        background-color: transparent;
+        ;
+    }
+}
+
+@media (max-width: 568px) {
+    #myNavbar>ul {
+        display: none;
+    }
+    .dropdown {
+        display: inline-block;
+        background-color: #fff;
+    }
+    #myCarousel {
+        width: 105%;
+        margin-top: 100px;
+        height: 250px !important;
+    }
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        height: 100%;
+    }
+    .navbar {
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 767px) {
+    #myNavbar>ul {
+        display: none;
+    }
+    .dropdown {
+        display: inline-block;
+        background-color: #fff;
+    }
+    #myCarousel {
+        width: 105%;
+        margin-top: 100px;
+        height: 250px !important;
+    }
+    .navbar {
+        background-color: transparent;
+        ;
+    }
 }
