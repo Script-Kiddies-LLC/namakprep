@@ -177,11 +177,11 @@ footer>div>div>a {
     text-decoration: none;
     display: block;
     text-align: left;
-    background-color: #fff;
+    background-color: #fcf7f9;
 }
 
 .dropdown-menu>a:active {
-    background-color: silver
+    background-color: #2bc435;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -189,7 +189,7 @@ footer>div>div>a {
 }
 
 .dropdown:hover .btn-secondary {
-    background-color: #fff;
+    background-color: #2bc435;
 }
 
 @media (max-width: 901px) {
@@ -202,7 +202,6 @@ footer>div>div>a {
     }
     .navbar {
         background-color: transparent;
-        ;
     }
 }
 
