@@ -24,10 +24,6 @@ npm i
 npm start
 ```
 
-## Tests
-
-Will be using testing in the near future.
-
 ## Contributors
 
 [Viltaria](https://github.com/Viltaria)
