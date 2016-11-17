@@ -29,6 +29,9 @@
 				<div class="col-sm-10 col-sm-offset-2">
 					<div id="myNavbar">
 						<ul class="nav navbar-nav">
+							<li>
+								<a href="index.html" style="padding: 0"><img src="/files/namaka.png" height="50px" width="60px"></a>
+							</li>
 							<li style="background-color:red;"><a href="index.html">Home</a></li>
 							<li style="background-color: orange;"><a href="about.html">About</a></li>
 							<li style="background-color: yellow"><a href="calendar.html">Calendar</a></li>
@@ -43,12 +46,17 @@
 						<div class="dropdown">
 							<button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"><span style="font-size: 35px;" class="glyphicon glyphicon-menu-hamburger"></span></button>
 							<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-							  <a href="index.html" class="dropdown-item">Home</a><li class="divider"></li>
-							  <a href="about.html" class="dropdown-item">About</a><li class="divider"></li>
-							  <a href="calendar.html" class="dropdown-item">Calendar</a><li class="divider"></li>
-							  <a href="admission.html" class="dropdown-item">Enrollment</a><li class="divider"></li>
-							  <a href="contact.html" class="dropdown-item">Contact</a><li class="divider"></li>
-							  <a href="parents.html" class="dropdown-item">Parent Resources</a>
+								<a href="index.html" class="dropdown-item">Home</a>
+								<li class="divider"></li>
+								<a href="about.html" class="dropdown-item">About</a>
+								<li class="divider"></li>
+								<a href="calendar.html" class="dropdown-item">Calendar</a>
+								<li class="divider"></li>
+								<a href="admission.html" class="dropdown-item">Enrollment</a>
+								<li class="divider"></li>
+								<a href="contact.html" class="dropdown-item">Contact</a>
+								<li class="divider"></li>
+								<a href="parents.html" class="dropdown-item">Parent Resources</a>
 							</div>
 						</div>
 					</div>
@@ -87,6 +95,7 @@
 					<div class="col-sm-7 col-sm-offset-1 text-left">
 						<h2 style="text-align: center">Contact Us!</h2>
 						<form action="http://formspree.io/ttejero@hawaii.edu" method="post">
+							<input type="hidden" name="_next" value="thankyou.html" />
 							<div class="form-group">
 								<label for="name">Name*</label>
 								<input type="text" name="Name" class="form-control" id="name" placeholder="Last name, First name" required>
@@ -102,7 +111,7 @@
 							</div>
 							<div class="form-group">
 								<label class="custom-control custom-checkbox">
-							  <input type="checkbox" name="EmailUpdates" class="custom-control-input">
+							  <input type="checkbox" name="EUpdates" class="custom-control-input">
 							  <span class="custom-control-indicator"></span>
 							  <span class="custom-control-description">Check here to receive email updates</span>
 							</label>
